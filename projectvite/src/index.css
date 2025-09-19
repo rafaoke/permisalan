@@ -1,0 +1,19 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+@theme {
+  --font-Josefin: "Josefin Sans", sans-serif;
+  --color-maroon: #680000;
+  --color-lightmaroon: #800404;
+  --color-darkmaroon: #600404;
+}
+
+@layer components {
+  .btn-primary {
+    @apply font-Josefin bg-white text-red-900 px-[40px] py-[15px] mt-6 font-bold;
+  }
+
+  .btn-primary:hover {
+    @apply bg-blue-700;
+  }
+}
